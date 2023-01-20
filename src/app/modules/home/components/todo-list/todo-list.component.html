@@ -9,5 +9,5 @@
     </li>
   </ul>
 </section>
-<app-todo-input-add-items></app-todo-input-add-items>
+<app-todo-input-add-items (issueTaskListItem)="setIssueTaskList($event)"></app-todo-input-add-items>
 <app-todo-button-delete-all (click)="deleteAllTaskList()" *ngIf="taskList.length"></app-todo-button-delete-all>
